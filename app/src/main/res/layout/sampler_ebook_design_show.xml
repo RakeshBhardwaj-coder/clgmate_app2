@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnViewAndDownload"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/ebook"
+            android:layout_width="90dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="17dp"
+            app:srcCompat="@drawable/ebook_img" />
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/ebook"
+            android:hint="Heelw"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/bookAuthorName"
+            android:layout_toRightOf="@+id/ebook"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Heelw"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="210dp"
+            android:background="#1E88E5"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="view"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/view_ebook"
+            android:background="#1E88E5"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Download"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

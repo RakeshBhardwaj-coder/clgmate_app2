@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EbookActivity"
+    android:orientation="vertical">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/recyclarView_ebook"-->
+<!--            tools:listitem="@layout/sample_recyclerview_1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:iss_corner_radius="10"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rvAeBook"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           />
+    </LinearLayout>
+</LinearLayout>
