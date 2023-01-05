@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".Auth.RegisterActivity">
 
+<!--    // aREt = activity register Edit text-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -16,14 +17,14 @@
         android:textColor="#070707"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/aREtUserName"
+        app:layout_constraintEnd_toEndOf="@+id/aREtUserName"
+        app:layout_constraintStart_toStartOf="@+id/aREtUserName"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/aREtUserName"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="196dp"
@@ -40,15 +41,15 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/aREtEmail"
+        app:layout_constraintEnd_toEndOf="@+id/aREtEmail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="@+id/aREtEmail"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/aREtPassword"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -63,13 +64,13 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/aREtConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/aREtConfirmPassword"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2" />
+        app:layout_constraintStart_toStartOf="@+id/aREtConfirmPassword" />
 
     <Button
-        android:id="@+id/button_register"
+        android:id="@+id/aREtBtnRegister"
         android:layout_width="347dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
@@ -80,11 +81,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/aREtConfirmPassword"
         app:layout_constraintVertical_bias="0.262" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/aREtEmail"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -99,13 +100,13 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/aREtPassword"
+        app:layout_constraintEnd_toEndOf="@+id/aREtPassword"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/aREtPassword" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/aREtConfirmPassword"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="328dp"
@@ -131,8 +132,8 @@
         android:layout_marginTop="20dp"
         android:text="Already have an account?"
         android:textColor="#E41C1C"
-        app:layout_constraintEnd_toEndOf="@+id/button_register"
-        app:layout_constraintStart_toStartOf="@+id/button_register"
-        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+        app:layout_constraintEnd_toEndOf="@+id/aREtBtnRegister"
+        app:layout_constraintStart_toStartOf="@+id/aREtBtnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/aREtBtnRegister" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

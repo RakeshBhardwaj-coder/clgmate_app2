@@ -41,14 +41,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Auth.RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.com.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".log_in_page"
+            android:name=".Auth.log_in_page"
             android:exported="false">
             <meta-data
                 android:name="android.com.lib_name"
