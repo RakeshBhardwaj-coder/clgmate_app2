@@ -4,57 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInPage"
     android:background="@color/white"
-    >
+    tools:context=".LogInPage">
 
     <!--    // aREt = activity register Edit text-->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="260dp"
         android:gravity="center"
         android:text="Login"
         android:textColor="#070707"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/aLIPEtUserName"
-        app:layout_constraintEnd_toEndOf="@+id/aLIPEtUserName"
-        app:layout_constraintStart_toStartOf="@+id/aLIPetEmail"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
-
-    <EditText
-        android:id="@+id/aLIPEtUserName"
-        android:layout_width="347dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/input_background"
-        android:drawableLeft="@drawable/ic_username"
-        android:ems="10"
-        android:foregroundGravity="center"
-        android:hint="username"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:paddingStart="20dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/aLIPetEmail"
         app:layout_constraintEnd_toEndOf="@+id/aLIPetEmail"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/aLIPetEmail"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/aLIPEtPassword"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="399dp"
+        android:layout_marginBottom="284dp"
         android:background="@drawable/input_background"
         android:drawableLeft="@drawable/ic_password"
         android:ems="10"
@@ -66,25 +41,24 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/aLIPEtConfirmPassword"
-        app:layout_constraintEnd_toEndOf="@+id/aLIPEtConfirmPassword"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/aLIPEtConfirmPassword" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/aLIPEtBtnLogin"
         android:layout_width="347dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button_backg_login"
         android:gravity="center"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aLIPEtConfirmPassword"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintTop_toBottomOf="@+id/aLIPEtPassword"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/aLIPetEmail"
@@ -106,26 +80,6 @@
         app:layout_constraintEnd_toEndOf="@+id/aLIPEtPassword"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/aLIPEtPassword" />
-
-    <EditText
-        android:id="@+id/aLIPEtConfirmPassword"
-        android:layout_width="347dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
-        android:background="@drawable/input_background"
-        android:drawableLeft="@drawable/ic_password"
-        android:ems="10"
-        android:foregroundGravity="center"
-        android:hint="confirm password"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/aLIPEt_already_have_account"

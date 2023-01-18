@@ -36,15 +36,14 @@ public class DownloadAndViewActivity extends AppCompatActivity {
         setListeners();
 
         //toolbar in syllabus
-//        Toolbar toolbar = findViewById(R.id.syllabus);
-//        setSupportActionBar(toolbar);
+
 
     }
 
     private void initViews() {
-        tvFileName = findViewById(R.id.tvUrl);
-        btnDownload = findViewById(R.id.btnDownload);
-        btnView = findViewById(R.id.btnView);
+        tvFileName = findViewById(R.id.tvAavaFileName);
+        btnDownload = findViewById(R.id.btnAavaDownload);
+        btnView = findViewById(R.id.btnAavaView);
 
 
         try {
@@ -57,7 +56,7 @@ public class DownloadAndViewActivity extends AppCompatActivity {
         fileName = fileName.substring(fileName.lastIndexOf('/') + 1);
         tvFileName.setText(fileName);
     }
-
+//
     private void setListeners() {
 
         btnDownload.setOnClickListener(v -> {

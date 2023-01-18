@@ -72,11 +72,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:weightSum="2"
         >
 
 
         <Button
             android:id="@+id/btnView"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -91,6 +93,8 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
+            android:layout_weight="0.5"
+
             android:id="@+id/btnDownload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

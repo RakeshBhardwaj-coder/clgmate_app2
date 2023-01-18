@@ -1,8 +1,14 @@
 package com.example.clgmate_app;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,6 +24,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.clgmate_app.Adapters.RecipeAdapter;
 import com.example.clgmate_app.Classes.RecyclerItemClickListener;
 import com.example.clgmate_app.Models.RecipeModel;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -27,6 +34,11 @@ public class HomeFragment extends Fragment {
     private ImageSlider imageSlider;
 
     RecyclerView recyclerView;
+
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,6 +79,19 @@ public class HomeFragment extends Fragment {
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext() , 2 );
         recyclerView.setLayoutManager(gridLayoutManager);
+
+
+//        drawerLayout = view.findViewById(R.id.fhAddWDrawerLayout);
+//        navigationView = view.findViewById(R.id.fHNavigationView);
+//        toolbar = view.findViewById(R.id.fhToolbar);
+//
+//        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+//        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(getActivity(),drawerLayout,toolbar,R.string.OpenSidebar,R.string.CloseSidebar);
+//        drawerLayout.addDrawerListener(toggle);
+//        toggle.getDrawerArrowDrawable().setColor(Color.WHITE);
+//        toggle.syncState();
 
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener
                 (getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {

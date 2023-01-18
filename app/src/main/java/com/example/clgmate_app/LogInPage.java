@@ -38,7 +38,7 @@ TextView alreadyHaveAccount;
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Login",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),"Login",Toast.LENGTH_SHORT).show();
                 LoginUser();
 
             }

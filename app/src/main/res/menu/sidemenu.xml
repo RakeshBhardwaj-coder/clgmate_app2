@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:title="Find Bus"
+            ></item>
+        <item
+            android:title="Register Bus Details"
+            >
+
+            <menu>
+                <item
+                    android:id="@+id/menu_registerBusDetails"
+                    android:title="Register Bus Details"
+                    />
+                <item
+                    android:id="@+id/menu_all_bus_details"
+                    android:title="All Bus Details"
+                    />
+            </menu>
+        </item>
+        <item
+            android:title="Logout"
+            >
+            <menu>
+
+                <item
+                    android:id="@+id/menu_logout"
+                    android:title="Log Out"
+                    />
+            </menu>
+        </item>
+    </group>
+
+</menu>

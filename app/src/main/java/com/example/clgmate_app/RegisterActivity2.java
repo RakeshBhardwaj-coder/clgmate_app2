@@ -39,8 +39,7 @@ public class RegisterActivity2 extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UserCreate(etEmail.getText().toString(),etPassword.getText().toString());
-                Toast.makeText(getApplicationContext(),"Registered",Toast.LENGTH_SHORT).show();
+                UserCreate();
 
 
             }
@@ -52,26 +51,43 @@ public class RegisterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(),"Btn Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),"Btn Clicked",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(),LogInPage.class));
             }
         });
 
     }
-    void UserCreate(String emailStr,String passwordStr){
-        mAuth.createUserWithEmailAndPassword(emailStr, passwordStr).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    Toast.makeText(getApplicationContext(), "Registration Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), LogInPage.class));
+    void UserCreate(){
 
-                } else {
-                    Toast.makeText(getApplicationContext(), "Registration Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+        String fullNameStr = etUsername.getText().toString();
+        String emailStr = etEmail.getText().toString();
+        String passwordStr = etPassword.getText().toString();
+        if (TextUtils.isEmpty(fullNameStr)) {
+            etUsername.setError("Name cannot be empty");
+            etUsername.requestFocus();
+        } else if (TextUtils.isEmpty(emailStr)) {
+            etEmail.setError("Email cannot be empty");
+            etEmail.requestFocus();
+        } else if (TextUtils.isEmpty(passwordStr)) {
+            etPassword.setError("Password cannot be empty");
+            etPassword.requestFocus();
+        } else {
+            mAuth.createUserWithEmailAndPassword(emailStr, passwordStr).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getApplicationContext(), "Registration Successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), LogInPage.class));
 
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Registration Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+
+                    }
                 }
-            }
-        });
+            });
+        }
+
+
     }
 
     private void CreateUser() {
