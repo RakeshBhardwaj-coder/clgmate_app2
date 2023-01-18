@@ -83,6 +83,7 @@ public class HomeFragment extends Fragment {
                             startActivity(intent1);
 
                         case 2:
+                            startActivity(new Intent(getContext(),LogInPage.class));
                             Toast.makeText(getContext(), "Third Item is clicked", Toast.LENGTH_SHORT).show();
                             break;
 
