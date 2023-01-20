@@ -8,8 +8,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.File;
@@ -17,11 +19,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import com.example.clgmate_app.R;
+import com.rajat.pdfviewer.PdfViewerActivity;
 
 public class DownloadAndViewActivity extends AppCompatActivity {
 
-    private TextView tvFileName;
-    private Button btnDownload, btnView;
+    private TextView tvFileName,tvFileName2;
+    Button btnDownload;
+    private Button  btnView1, btnView2;
 
     private String filepath = "http://192.168.181.228/7th%20Sem%20syllabus%20IT.pdf";
     private URL url = null;
@@ -36,6 +40,36 @@ public class DownloadAndViewActivity extends AppCompatActivity {
         setListeners();
 
         //toolbar in syllabus
+        btnView1 = findViewById(R.id.btnAavaView);
+        btnView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(PdfViewerActivity.Companion.launchPdfFromPath(
+                        getApplicationContext(),
+                        "7th_sem_syllabus.pdf",
+                        "7th_sem_syllabus/name",
+                        "assets",
+                        false,
+                        true
+
+                ));
+            }
+        });
+        btnView2 = findViewById(R.id.btnAavaView2);
+        btnView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(PdfViewerActivity.Companion.launchPdfFromPath(
+                        getApplicationContext(),
+                        "8th_sem_syllabus.pdf",
+                        "8th_sem_syllabus/name",
+                        "assets",
+                        false,
+                        true
+
+                ));
+            }
+        });
 
 
     }
@@ -43,7 +77,7 @@ public class DownloadAndViewActivity extends AppCompatActivity {
     private void initViews() {
         tvFileName = findViewById(R.id.tvAavaFileName);
         btnDownload = findViewById(R.id.btnAavaDownload);
-        btnView = findViewById(R.id.btnAavaView);
+        btnView1 = findViewById(R.id.btnAavaView);
 
 
         try {
@@ -54,7 +88,9 @@ public class DownloadAndViewActivity extends AppCompatActivity {
 
         fileName = url.getPath();
         fileName = fileName.substring(fileName.lastIndexOf('/') + 1);
-        tvFileName.setText(fileName);
+        tvFileName.setText("7th_sem_syllabus.pdf");
+        tvFileName2 = findViewById(R.id.tvAavaFileName2);
+        tvFileName2.setText("8th_sem_syllabus.pdf");
     }
 //
     private void setListeners() {
@@ -71,7 +107,7 @@ public class DownloadAndViewActivity extends AppCompatActivity {
             dm.enqueue(request);
         });
 
-        btnView.setOnClickListener(v -> {
+        btnView1.setOnClickListener(v -> {
             File file=new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)+"/"+fileName);
             Uri uri= FileProvider.getUriForFile(DownloadAndViewActivity.this ,"com.example.clgmate_app"+".provider",file);
             Intent i=new Intent(Intent.ACTION_VIEW);

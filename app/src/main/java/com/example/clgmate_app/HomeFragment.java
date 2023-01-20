@@ -104,15 +104,14 @@ public class HomeFragment extends Fragment {
                             break;
 
                         case 1:
-                            Intent intent1 = new Intent(getContext() , EbookActivity.class);
-                            startActivity(intent1);
-
-                        case 2:
-                            startActivity(new Intent(getContext(),LogInPage.class));
-                            Toast.makeText(getContext(), "Third Item is clicked", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getContext(),EbookActivity.class));
                             break;
 
-                        default:
+                        case 2:
+                            startActivity(new Intent(getContext(),Academic_Calender.class));
+                            break;
+
+
                     }
 
                     }

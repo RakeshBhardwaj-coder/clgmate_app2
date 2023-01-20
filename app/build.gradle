@@ -45,7 +45,9 @@ dependencies {
 
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'     //for moving image
 
+//    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'   //for pdf viewing
 
+    implementation 'com.github.afreakyelf:Pdf-Viewer:v1.0.7'
 
     implementation platform('com.google.firebase:firebase-bom:30.4.1')
     implementation 'com.google.firebase:firebase-analytics'
