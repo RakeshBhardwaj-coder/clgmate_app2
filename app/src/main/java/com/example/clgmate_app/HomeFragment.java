@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -36,6 +37,7 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
 
 
+
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -53,6 +55,9 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.recyclarView);
+
+
+
 
         //Here in mainactivity we will get the data
         //to show the following image and text and here adapter will do get these
@@ -130,6 +135,8 @@ public class HomeFragment extends Fragment {
 
         imageSlider = view.findViewById(R.id.imageSlider);
 
+
+
         // Creating a list of images
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
@@ -143,6 +150,8 @@ public class HomeFragment extends Fragment {
         slideModels.add(new SlideModel(R.drawable.image5, ScaleTypes.FIT));
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
+
+
 
 
     }

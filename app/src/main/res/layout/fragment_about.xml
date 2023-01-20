@@ -5,12 +5,123 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/faLlAbout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/primary_color"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/_20sdp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tvAboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Our College"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+
+            />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/faLlAbout"
+    android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Fragment"
-        android:textSize="25dp"
-        android:layout_centerInParent="true"/>
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tvFaAboutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Detials"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vision of the Institute"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tvFaAboutDetails2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Detials"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission of the Institute"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tvFaAboutDetails3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Detials"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+
+
+        />
+</LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+    <include layout="@layout/content_scrolling" />
 
 
 
