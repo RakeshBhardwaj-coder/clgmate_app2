@@ -20,6 +20,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".About_ScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_about_scrolling"
+            android:theme="@style/Theme.clgmate_app.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FacultyActivity"
             android:exported="false">
             <meta-data

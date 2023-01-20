@@ -22,4 +22,13 @@
     <style name="Theme.Clgmate_app.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Clgmate_app.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.clgmate_app.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.clgmate_app.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.clgmate_app.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

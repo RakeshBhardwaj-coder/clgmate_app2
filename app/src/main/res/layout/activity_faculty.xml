@@ -4,6 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FacultyActivity">
+    <TextView
+        android:id="@+id/text_book_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Books"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title:"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/edit_book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter book title"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Author:"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/edit_book_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter book author"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_book_isbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book ISBN:"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/edit_book_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter book ISBN"
+            android:layout_margin="10dp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_book_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book File:"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/button_book_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:layout_margin="10dp"
+            android:onClick="chooseFile" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_upload_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Book"
+        android:layout_margin="10dp"
+        android:onClick="uploadBook" />
+
+    </LinearLayout>
