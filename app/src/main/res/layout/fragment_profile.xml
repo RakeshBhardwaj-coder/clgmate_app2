@@ -67,7 +67,7 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile UI Design" />
+                android:text="Notification" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -79,17 +79,17 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile XMl UI Design" />
+                android:text="Edit Profiles" />
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:padding="20dp"
-                android:text="Android Profile UI Design" />
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="#fff"-->
+<!--                android:clickable="true"-->
+<!--                android:elevation="4dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:text="Android Profile UI Design" />-->
 
             <TextView
                 android:layout_width="fill_parent"
@@ -101,7 +101,7 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile XMl UI Design" />
+                android:text="Settings" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -111,7 +111,7 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Android Profile UI Design" />
+                android:text="About Us" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

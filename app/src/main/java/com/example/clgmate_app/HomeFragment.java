@@ -116,6 +116,9 @@ public class HomeFragment extends Fragment {
                             startActivity(new Intent(getContext(),Academic_Calender.class));
                             break;
 
+                        case 3:
+                            startActivity(new Intent(getContext(),FacultyActivity.class));
+                            break;
 
                     }
 
